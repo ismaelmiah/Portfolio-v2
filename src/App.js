@@ -1,7 +1,7 @@
 import './App.css';
 import Layout from './layout';
 
-function App() {
+const App = () => {
   return (
     <Layout></Layout>
   );
