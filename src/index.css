@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.group.active > .nav-indicator {
+  width: 4rem;
+  background-color: rgb(226 232 240 / 1);
+}
+
+.group.active > .nav-text {
+  color: rgb(226 232 240 / 1);
+}
+
 #error-page {
   display: flex;
   flex-direction: column;
