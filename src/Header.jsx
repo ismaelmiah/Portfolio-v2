@@ -1,9 +1,8 @@
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (
     <>
-      {" "}
       <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
         <div>
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
@@ -12,22 +11,40 @@ const Header = () => {
           <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
             Software Engineer at ASTHA IT
           </h2>
-          <p className="mt-4 max-w-xs leading-normal">
+          <p className="mt-4 max-w-xs leading-relaxed text-justify">
             I build accessible, inclusive products and digital experiences for
-            the web.
+            the web. I enjoy taking on new challenges and collaborating with
+            other developers to create innovative and impactful products that
+            solve real-world problems.
           </p>
           <nav className="nav hidden lg:block" aria-label="In-page jump links">
             <ul className="mt-16 w-max">
               <li>
-              <Link to="about" className='group flex items-center py-3 cursor-pointer' activeClass="active" spy={true} smooth={true} offset={-100} duration={500}>
+                <Link
+                  to="about"
+                  className="group flex items-center py-3 cursor-pointer"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
                   <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                     About
                   </span>
-            </Link>
+                </Link>
               </li>
               <li>
-                <Link to="experience" className='group flex items-center py-3 cursor-pointer' smooth={true} spy={true} offset={-90} duration={500} activeClass="active">
+                <Link
+                  to="experience"
+                  className="group flex items-center py-3 cursor-pointer"
+                  smooth={true}
+                  spy={true}
+                  offset={-90}
+                  duration={500}
+                  activeClass="active"
+                >
                   <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                     Experience
@@ -35,7 +52,15 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link to="projects" className='group flex items-center py-3 cursor-pointer' smooth={true} spy={true}  offset={-200} duration={500} activeClass="active">
+                <Link
+                  to="projects"
+                  className="group flex items-center py-3 cursor-pointer"
+                  smooth={true}
+                  spy={true}
+                  offset={-200}
+                  duration={500}
+                  activeClass="active"
+                >
                   <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
                   <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
                     Projects
