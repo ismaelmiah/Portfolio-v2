@@ -20,38 +20,45 @@ const Experience = () => {
                   className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
                   aria-label="2018 to Present"
                 >
-                  2018 — Present
+                  2021 — Present
                 </header>
                 <div className="z-10 sm:col-span-6">
                   <h3 className="font-medium leading-snug text-slate-200">
                     <div>
                       <a
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                        href="https://upstatement.com"
+                        href="https://www.asthait.com/"
                         target="_blank"
                         rel="noreferrer"
-                        aria-label="Lead Engineer at Upstatement"
+                        aria-label="UI Engineer Co-op at Apple"
                       >
+                        <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                        <span>
+                          Software Engineer {" . "}
+                          <span className="inline-block">ASTHA IT</span>
+                        </span>
                       </a>
                     </div>
-                    <div>
-                      <div className="text-slate-500" aria-hidden="true">
-                        Senior Engineer
-                      </div>
-                    </div>
-                    <div>
-                      <div className="text-slate-500" aria-hidden="true">
-                        Engineer
-                      </div>
-                    </div>
                   </h3>
-                  <p className="mt-2 text-sm leading-normal">
-                    Deliver high-quality, robust production code for a diverse
-                    array of projects for clients including Harvard Business
-                    School, Everytown for Gun Safety, Pratt Institute, Koala
-                    Health, Vanderbilt University, The 19th News, and more.
-                    Provide leadership within engineering department through
-                    close collaboration, knowledge shares, and mentorship.
+                  <p className="mt-2 text-sm leading-normal text-justify">
+                    I've been a team lead at StrataSpot's live platform, where I
+                    handle client stuff, figure out what we need to do, help out
+                    the newbies, and even get my hands coding for feature
+                    rollouts. I set up a super smooth way to develop and
+                    integrate new stuff, like checking others' work and making
+                    sure everything fits together. Also, I'm big on testing to
+                    catch problems early. Over at Transcom Digital, I rocked
+                    ReactJS, NextJs, .NET Core 3.1, and MongoDB.
+                  </p>
+                  <p className="mt-2 text-sm leading-normal text-justify">
+                    I made cool things happen, like making payments easy and
+                    setting up discounts. I've also made a social media platform
+                    for Hawai'i's Global Aloha project pop with Angular, .NET
+                    Core 3.1, and PostgreSQL. I'm all about keeping things
+                    agile, joining in planning sessions, daily check-ins, and
+                    looking back to make things even better. And hey, I've been
+                    recognized for being awesome at solving problems and giving
+                    my all to the team.
                   </p>
                   <ul
                     className="mt-2 flex flex-wrap"
@@ -64,17 +71,27 @@ const Experience = () => {
                     </li>
                     <li className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                        React Native
+                        Next JS
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                        SCSS
+                        MSSQL
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                        WordPress
+                        PostgreSQL
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                        MongoDB
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                        Asp .Net | .Net Core
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
@@ -89,7 +106,7 @@ const Experience = () => {
                     </li>
                     <li className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                        PHP
+                        C#
                       </div>
                     </li>
                   </ul>
@@ -118,9 +135,7 @@ const Experience = () => {
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
                           UI Engineer Co-op ·{" "}
-                          <span className="inline-block">
-                            Apple
-                          </span>
+                          <span className="inline-block">Apple</span>
                         </span>
                       </a>
                     </div>
@@ -131,7 +146,10 @@ const Experience = () => {
                     widget for in-browser user authorization and full song
                     playback.
                   </p>
-                  <ul className="mt-2 flex flex-wrap" aria-label="Related links">
+                  <ul
+                    className="mt-2 flex flex-wrap"
+                    aria-label="Related links"
+                  >
                     <li className="mr-4">
                       <a
                         className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
@@ -191,7 +209,6 @@ const Experience = () => {
                 </div>
               </div>
             </li>
-
           </ol>
           <div className="mt-12">
             <a
