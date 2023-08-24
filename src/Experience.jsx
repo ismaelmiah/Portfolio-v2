@@ -30,12 +30,12 @@ const Experience = () => {
                         href="https://www.asthait.com/"
                         target="_blank"
                         rel="noreferrer"
-                        aria-label="UI Engineer Co-op at Apple"
+                        aria-label="Software Engineer at Astha IT"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
                           Software Engineer {" . "}
-                          <span className="inline-block">ASTHA IT</span>
+                          <span className="inline-block">ASTHA IT <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg></span>
                         </span>
                       </a>
                     </div>
@@ -62,9 +62,53 @@ const Experience = () => {
                   </p>
                   <ul
                     className="mt-2 flex flex-wrap"
+                    aria-label="Related links"
+                  >
+                    <li className="mr-4">
+                      <a
+                        className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                        href="https://apex4u.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <span>Apex</span>
+                      </a>
+                    </li>
+                    <li className="mr-4">
+                      <a
+                        className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                        href="https://www.strataspot.com.au/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <span>StrataSpot</span>
+                      </a>
+                    </li>
+                    <li className="mr-4">
+                      <a
+                        className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                        href="https://transcomdigital.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <span>Transcom Digital</span>
+                      </a>
+                    </li>
+                    <li className="mr-4">
+                      <a
+                        className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                        href="https://www.punahou.edu/luke-center-for-public-service/programs-and-initiatives/global-aloha"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <span>Global-Aloha</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul
+                    className="mt-2 flex flex-wrap"
                     aria-label="Technologies used"
                   >
-                    
                     <li className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                         C#
@@ -109,7 +153,8 @@ const Experience = () => {
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                         TypeScript
                       </div>
-                    </li><li className="mr-1.5 mt-2">
+                    </li>
+                    <li className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                         React
                       </div>
@@ -125,79 +170,54 @@ const Experience = () => {
                   className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
                   aria-label="July to December 2017"
                 >
-                  July — Dec 2017
+                  December 2020 — January 2021
                 </header>
                 <div className="z-10 sm:col-span-6">
                   <h3 className="font-medium leading-snug text-slate-200">
                     <div>
                       <a
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                        href="https://www.apple.com/apple-music/"
+                        href="https://www.asthait.com/"
                         target="_blank"
                         rel="noreferrer"
-                        aria-label="UI Engineer Co-op at Apple"
+                        aria-label="Software Engineer Intern at Astha IT"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
-                          UI Engineer Co-op ·{" "}
-                          <span className="inline-block">Apple</span>
+                          Software Engineer Internship {" . "}
+                          <span className="inline-block">ASTHA IT <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg></span>
                         </span>
                       </a>
                     </div>
                   </h3>
                   <p className="mt-2 text-sm leading-normal">
-                    Developed and styled interactive web apps for Apple Music,
-                    including the UI of Apple Music’s embeddable web player
-                    widget for in-browser user authorization and full song
-                    playback.
+                    I collaborated with a development team to implement new
+                    features that enhanced user experience. Using Git, I managed
+                    code efficiently and promoted teamwork. I built projects
+                    using React and Angular, including ecommerce and social
+                    media apps. I showcased expertise in C#, .NET, and
+                    integrated React into a personal project, highlighting
+                    technical depth. I also effectively utilized Asp .NET-3.1
+                    and MSSQL in practical projects, advancing my web
+                    development skills.
                   </p>
-                  <ul
-                    className="mt-2 flex flex-wrap"
-                    aria-label="Related links"
-                  >
-                    <li className="mr-4">
-                      <a
-                        className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                        href="https://developer.apple.com/documentation/musickitjs"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span>MusicKit.js</span>
-                      </a>
-                    </li>
-                    <li className="mr-4">
-                      <a
-                        className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                        href="https://9to5mac.com/2018/06/03/apple-music-embeddable-web-player-listen-browser/"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span>9to5Mac</span>
-                      </a>
-                    </li>
-                    <li className="mr-4">
-                      <a
-                        className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
-                        href="https://www.theverge.com/2017/10/5/16433770/facebook-messenger-apple-music-bot-song-streaming"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <span>The Verge</span>
-                      </a>
-                    </li>
-                  </ul>
                   <ul
                     className="mt-2 flex flex-wrap"
                     aria-label="Technologies used"
                   >
                     <li className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                        Ember
+                        Asp .Net Core
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                        SCSS
+                        MSSQL
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                        GIT
                       </div>
                     </li>
                     <li className="mr-1.5 mt-2">
@@ -207,7 +227,7 @@ const Experience = () => {
                     </li>
                     <li className="mr-1.5 mt-2">
                       <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                        MusicKit.js
+                        React
                       </div>
                     </li>
                   </ul>
@@ -218,8 +238,9 @@ const Experience = () => {
           <div className="mt-12">
             <a
               className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
-              aria-label="View Full Résumé"
-              href="/resume.pdf"
+              aria-label="View Full Resume"
+              href="/resume/Resume_Of_Ismael_Miah.pdf"
+              target="_blank"
             >
               <span>
                 <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
@@ -227,7 +248,7 @@ const Experience = () => {
                 </span>
                 <span className="whitespace-nowrap">
                   <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
-                    Résumé
+                    Resume
                   </span>
                 </span>
               </span>
