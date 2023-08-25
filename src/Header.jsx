@@ -41,7 +41,7 @@ const Header = () => {
                   className="group flex items-center py-3 cursor-pointer"
                   smooth={true}
                   spy={true}
-                  offset={-40}
+                  offset={-45}
                   duration={500}
                   activeClass="active"
                 >
@@ -57,7 +57,7 @@ const Header = () => {
                   className="group flex items-center py-3 cursor-pointer"
                   smooth={true}
                   spy={true}
-                  offset={-200}
+                  offset={-260}
                   duration={500}
                   activeClass="active"
                 >
