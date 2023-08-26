@@ -48,7 +48,7 @@ const Project = () => {
                       </span>
                     </a>
                   </h3>
-                  <p className="mt-2 text-sm leading-normal">
+                  <p className="mt-2 text-sm leading-normal text-justify">
                     A tracking tool that we use to keep an eye on things like
                     keypresses, mouse movement, and even grab screenshots from
                     the user's system at different times. It's a desktop app
@@ -101,7 +101,7 @@ const Project = () => {
                       </span>
                     </a>
                   </h3>
-                  <p className="mt-2 text-sm leading-normal">
+                  <p className="mt-2 text-sm leading-normal text-justify">
                     An all-in-one Online School Management System that lets you
                     run your school smoothly, no matter where or when.
                   </p>
@@ -152,7 +152,7 @@ const Project = () => {
                       </span>
                     </a>
                   </h3>
-                  <p className="mt-2 text-sm leading-normal">
+                  <p className="mt-2 text-sm leading-normal text-justify">
                     This is a social networking platform with real-time activity
                     status. We built this super-responsive web app using React
                     and Asp .net Web API. And yeah, we developed it following
