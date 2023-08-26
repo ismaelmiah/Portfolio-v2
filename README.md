@@ -2,7 +2,7 @@
 
 The simplest design for your personal website.
 
-![Overview](https://github.com/bchiang7/octoprofile/assets/29182508/bad68f5f-8391-46d3-bdae-a51b29e4a3ba)
+![Overview](https://github.com/ismaelmiah/Portfolio-v2/assets/29182508/bd38ec4d-8b31-48ab-8f75-f7fc4fac37e7)
 
 Built with:
 
