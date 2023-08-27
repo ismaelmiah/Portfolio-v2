@@ -5,16 +5,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="robots" content="index,follow"/>
-  <meta property="og:description"
-  content="Ismael Miah is a software engineer who builds accessible,
+  <meta name="robots" content="index,follow" />
+  <meta property="og:description" content="Ismael Miah is a software engineer who builds accessible,
   inclusive products and digital experiences for the web." />
   <meta property="og:image" content="%PUBLIC_URL%/images/Thumbnail.jpeg" />
-  <meta property="og:image:type" content="image/jpeg"/>
-  <meta property="og:image:alt" content="Summary Image"/>
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:alt" content="Summary Image" />
   <meta property="og:title" content="Ismael Miah" />
-  <meta property="og:type" content="website"/>
-  <meta property="og:locale" content="en_IE"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_IE" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <link rel="favicon-16x16" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon/favicon-16x16.png">
@@ -55,5 +54,17 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
+
+<script type="text/JavaScript">
+  document.addEventListener("DOMContentLoaded", function() {
+    console.log('loaded');
+  let focus = document.getElementById('pointer-events');
+  window.addEventListener('mousemove', function(e){
+    focus.style.background = `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+    console.log(e.clientX,'-',e.clientY);
+  })
+}); 
+
+</script>
 
 </html>
