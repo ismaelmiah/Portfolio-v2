@@ -16,6 +16,7 @@
   <meta property="og:locale" content="en_IE" />
   <meta name="twitter:card" content="summary_large_image" />
 
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon/apple-touch-icon.png">
   <link rel="favicon-16x16" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon/favicon-16x16.png">
   <link rel="favicon-32x32" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon/favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/favicon/apple-touch-icon.png">
@@ -61,7 +62,7 @@
   let focus = document.getElementById('pointer-events');
   console.log(focus);
   window.addEventListener('mousemove', function(e){
-    focus.style.background = `radial-gradient(600px at ${e.clientX}px ${e.clientY}px, rgba(29, 78, 216, 0.15), transparent 80%)`;
+    focus.style.background = `radial-gradient(400px at ${e.clientX}px ${e.clientY}px, rgba(29, 78, 216, 0.25), transparent 80%)`;
   })
 }); 
 
