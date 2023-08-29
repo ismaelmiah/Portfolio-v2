@@ -3,6 +3,7 @@ import ArchiveProjects from "./Components/archiveProjects";
 import Layout from "./Components/layout";
 import ErrorPage from "./Components/errorPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Login from "./Components/Admin/login";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/archive",
     element: <ArchiveProjects />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
 ]);
 
