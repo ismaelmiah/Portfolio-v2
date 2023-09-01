@@ -1,7 +1,7 @@
-import About from "./About";
-import Experience from "./Experience";
-import Header from "./Header";
-import Project from "./Project";
+import About from "./about";
+import Experience from "./experience";
+import Header from "./header";
+import Project from "./project";
 
 const Layout = () => {
   return (

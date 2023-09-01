@@ -1,7 +1,7 @@
 import "./App.css";
-import ArchiveProjects from "./ArchiveProjects";
-import Layout from "./layout";
-import ErrorPage from "./ErrorPage";
+import ArchiveProjects from "./Components/archiveProjects";
+import Layout from "./Components/layout";
+import ErrorPage from "./Components/errorPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
