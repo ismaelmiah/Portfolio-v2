@@ -4,6 +4,7 @@ import Layout from "./Components/layout";
 import ErrorPage from "./Components/errorPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./Components/Admin/login";
+import Dashboard from "./Components/Admin/dashboard";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
+  {
+    path: '/admin/dashboard',
+    element: <Dashboard />
+  }
 ]);
 
 const App = () => {
