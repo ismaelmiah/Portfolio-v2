@@ -5,11 +5,11 @@ const Dashboard = () => {
     <>
       <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
         <div className="lg:flex lg:justify-between lg:gap-4">
-          <div className="pt-24 flex flex-row lg:w-1/2 lg:py-24">
-            <div className="flex flex-row">
-              <div className="basic-1/2 px-2">
+          <div className="pt-24 lg:w-1/2 lg:py-24">
+            <div className="flex flex-row w-full">
+              <div className="basic-1/2 w-full px-2">
                 <a
-                  className="py-12 px-6 bg-white shadow-lg mb-6 rounded-lg items-center justify-center h-12 block flex"
+                  className="hover:text-violet-600 py-12 px-6 bg-white shadow-lg mb-6 rounded-lg items-center justify-center h-12 block flex"
                   href="/admin/editor/"
                 >
                   <svg
@@ -25,9 +25,9 @@ const Dashboard = () => {
                   <span className="py-8 px-2 block text-center">New Posts</span>
                 </a>
               </div>
-              <div className="basic-1/2 px-2">
+              <div className="basic-1/2 w-full px-2">
                 <a
-                  className="py-12 px-6 bg-white shadow-lg mb-6 rounded-lg items-center justify-center h-12 block flex"
+                  className="hover:text-violet-600 py-12 px-6 bg-white shadow-lg mb-6 rounded-lg items-center justify-center h-12 block flex"
                   href="/admin/pages/editor/"
                 >
                   <svg
@@ -42,6 +42,35 @@ const Dashboard = () => {
                     <path d="M12 3C13.1046 3 14 3.89543 14 5L14 19C14 20.1046 13.1046 21 12 21C10.8954 21 10 20.1046 10 19L10 5C10 3.89543 10.8954 3 12 3Z" />
                   </svg>
                   <span className="py-8 px-2 block text-center">New Pages</span>
+                </a>
+              </div>
+            </div>
+            <div className="flex flex-row w-full">
+              <div className="basic-1/3 w-full h-12 px-2">
+                <a
+                  className="hover:text-violet-600 py-8 px-2 bg-white shadow-lg mb-6 rounded-lg items-center justify-center h-12 block flex"
+                  href="/admin/blog/"
+                >
+                  <span class="block text-2xl font-light mb-2">4</span>
+                  <span class="block font-medium">Posts</span>
+                </a>
+              </div>
+              <div className="basic-1/3 w-full h-12 px-2">
+                <a
+                  className="hover:text-violet-600 py-8 px-2 bg-white shadow-lg mb-6 rounded-lg items-center justify-center h-12 block flex"
+                  href="/admin/blog/"
+                >
+                  <span class="block text-2xl font-light mb-2">4</span>
+                  <span class="block font-medium">Posts</span>
+                </a>
+              </div>
+              <div className="basic-1/3 w-full h-12 px-2">
+                <a
+                  className="hover:text-violet-600 py-8 px-2 bg-white shadow-lg mb-6 rounded-lg items-center justify-center h-12 block flex"
+                  href="/admin/blog/"
+                >
+                  <span class="block text-2xl font-light mb-2">4</span>
+                  <span class="block font-medium">Posts</span>
                 </a>
               </div>
             </div>
