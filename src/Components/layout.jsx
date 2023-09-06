@@ -1,4 +1,5 @@
 import About from "./about";
+import Blogs from "./blogs";
 import Experience from "./experience";
 import Header from "./header";
 import Project from "./project";
@@ -13,6 +14,7 @@ const Layout = () => {
             <About />
             <Experience />
             <Project />
+            <Blogs />
             <div className="mt-20">
               Designed copied from{" "}
               <a
