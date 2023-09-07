@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Blogs = () => {
   return (
     <>
@@ -25,23 +27,22 @@ const Blogs = () => {
                   decoding="async"
                   data-nimg="1"
                   className="z-10 col-span-2 rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:col-span-2"
-                  style={{color: 'transparent'}}
+                  style={{ color: "transparent" }}
                 />
                 <div className="z-10 col-span-6">
                   <p className="-mt-1 text-sm font-semibold leading-6">2023</p>
                   <h3 className="-mt-1">
-                    <a
+                    <Link
+                      onClick={() => window.scrollTo(0, 0)}
                       className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                      href="https://google.com"
-                      target="_blank"
-                      rel="noreferrer"
                       aria-label="Integrating Algolia Search with Asp .NET"
+                      to="/blogs/integrating-algolia-search-asp-net"
                     >
                       <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                       <span>
-                        Integrating Algolia Search with {" "}
+                        Integrating Algolia Search with{"  "}
                         <span className="inline-block">
-                            Asp .NET
+                          Asp .NET
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 20 20"
@@ -57,7 +58,7 @@ const Blogs = () => {
                           </svg>
                         </span>
                       </span>
-                    </a>
+                    </Link>
                   </h3>
                 </div>
               </div>
