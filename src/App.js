@@ -2,28 +2,46 @@ import "./App.css";
 import ArchiveProjects from "./Components/archiveProjects";
 import Layout from "./Components/layout";
 import ErrorPage from "./Components/errorPage";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 import Login from "./Components/Admin/login";
 import Dashboard from "./Components/Admin/dashboard";
+import Blogs from "./Components/Blog/blogs";
+import AlgoliaSearchIntegration from "./Components/Blog/Item/algolia-search";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "",
     element: <Layout />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/archive",
+    path: "archive",
     element: <ArchiveProjects />,
   },
   {
-    path: "/login",
+    path: "login",
     element: <Login />,
   },
   {
-    path: '/admin/dashboard',
-    element: <Dashboard />
-  }
+    path: "admin/dashboard",
+    element: <Dashboard />,
+  },
+  {
+    path: "blogs",
+    children: [
+      {
+        path: "",
+        element: <Blogs />,
+      },
+      {
+        path: "integrating-algolia-search-asp-net",
+        element: <AlgoliaSearchIntegration />,
+      },
+    ],
+  },
 ]);
 
 const App = () => {
