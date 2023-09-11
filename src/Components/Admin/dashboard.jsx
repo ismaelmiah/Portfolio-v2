@@ -1,5 +1,3 @@
-import Analytics from "./analytics";
-
 const Dashboard = () => {
   return (
     <>
