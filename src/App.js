@@ -10,6 +10,7 @@ import Login from "./Components/Admin/login";
 import Dashboard from "./Components/Admin/dashboard";
 import Blogs from "./Components/Blog/blogs";
 import AlgoliaSearchIntegration from "./Components/Blog/Item/algolia-search";
+import ApiVersioningInAspDotNet from "./Components/Blog/Item/api-versioning-asp-dot-net";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "integrating-algolia-search-asp-net",
         element: <AlgoliaSearchIntegration />,
+      },
+      {
+        path: "api-versioning-in-asp-net",
+        element: <ApiVersioningInAspDotNet />,
       },
     ],
   },
