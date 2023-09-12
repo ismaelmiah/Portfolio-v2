@@ -29,11 +29,16 @@ const AlgoliaSearchIntegration = () => {
             <h3 className="text-4xl text-center text-white font-light mb-10 hover:italic">
               Integrating Algolia Search with Asp .NET
             </h3>
-            <p className="text-xl text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
-              optio voluptates saepe, voluptas deleniti asperiores perspiciatis
-              iure dolorum, necessitatibus labore natus eos suscipit eaque ipsa
-              ea impedit. Eveniet, voluptatibus quo.
+            <p className="text-xl text-white text-justify">
+              Recently, we've built an e-commerce platform at Astha-IT for APEX
+              is the largest footwear brand in Bangladesh. We chose Algolia to
+              search for products, here's a fun fact, the client is also
+              familiar with Algolia search. We've also successfully built many
+              applications but none of them have integrated Algolia. This is the
+              first time, we've had a challenge to implement it. We have a big
+              advantage of using Algolia with .NET projects is that they already
+              have robust SDKs in Dot NET.
+            </p>
             </p>
             <p className="mt-10 text-xl text-white">
               Content writing in progress........
