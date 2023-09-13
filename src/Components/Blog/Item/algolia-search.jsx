@@ -39,6 +39,28 @@ const AlgoliaSearchIntegration = () => {
               advantage of using Algolia with .NET projects is that they already
               have robust SDKs in Dot NET.
             </p>
+            <p className="mt-10 text-xl text-white text-justify">
+              Typically, there are three main steps to integrate Algolia into a
+              project:
+              <ol className="mt-5">
+                <li>1. Indexing your data</li>
+                <li>2. Optimizing your data relevance</li>
+                <li>
+                  3. Building your front-end search experience We just need to
+                  form data into a way, to throw all of our searchable data into
+                  a JSON file, push it up to Algolia, and call it a day.
+                </li>
+              </ol>
+              <br />
+              At first, we had to find the keywords for which Algolia would
+              search and the filters that would be used to filter search
+              results. As our goal was to search and filter footwear products,
+              here come some challenges with product searching, brand, category,
+              style, color, and size-wise filtering. So, in order to best serve
+              our global navigation search along with our other search UIs
+              (think: people directories), we decided that we really only needed{" "}
+              <b>one global index</b>.
+            </p>
             </p>
             <p className="mt-10 text-xl text-white">
               Content writing in progress........
