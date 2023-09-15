@@ -61,9 +61,37 @@ const AlgoliaSearchIntegration = () => {
               (think: people directories), we decided that we really only needed{" "}
               <b>one global index</b>.
             </p>
+            <p className="mt-10 text-xl text-white text-justify">
+              We would{" "}
+              <a
+                className="hover:text-orange-200 underline"
+                href="https://www.algolia.com/doc/guides/managing-results/refine-results/filtering"
+              >
+                filter
+              </a>{" "}
+              and{" "}
+              <a
+                className="hover:text-orange-200 underline"
+                href="https://www.algolia.com/doc/guides/managing-results/refine-results/faceting/"
+              >
+                facet
+              </a>{" "}
+              our records using their attributes. According to the plan, we had
+              worked on that. After successfully indexing data, we could apply
+              the searching and filtering. Still, we need to figure out the key
+              points when each product indexing needs to be updated.
+              <br /> Example:{" "}
+              <ol>
+                <li>1. Product update</li>
+                <li>2. Category update</li>
+                <li>3. Brand update etc....</li>
+              </ol>{" "}
+              and others. Although we've implemented these parts there was a
+              major feature we were missing, that is parent-child relations for
+              product searching.
             </p>
             <p className="mt-10 text-xl text-white">
-              Content writing in progress........
+              I'm writing this down.............
             </p>
           </div>
         </div>
