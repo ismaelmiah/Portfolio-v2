@@ -5,7 +5,6 @@ import { useEffect } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    console.log('mouse move event triggered');
     let focus = document.getElementById("pointer-events");
     window.addEventListener("mousemove", function (e) {
       if (focus != null) {
