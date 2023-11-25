@@ -127,12 +127,7 @@ const About = () => {
               </li>
               <li className="mr-1.5 mt-2">
                 <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                  Amazon RDS
-                </div>
-              </li>
-              <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                  Amazon DynamoDB
+                  AWS (EC2, S3, ELB, ASG, Lambda, RDS, DynamoDB, SQS, SNS, CodeDeploy, CloudFormation, BeanStalk, System Manager)
                 </div>
               </li>
               <li className="mr-1.5 mt-2">
@@ -183,11 +178,6 @@ const About = () => {
               <li className="mr-1.5 mt-2">
                 <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                   Kafka
-                </div>
-              </li>
-              <li className="mr-1.5 mt-2">
-                <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                  AWS (CI/CD, ELB, ASG)
                 </div>
               </li>
               <li className="mr-1.5 mt-2">

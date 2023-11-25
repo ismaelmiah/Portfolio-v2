@@ -16,17 +16,8 @@ const Layout = () => {
             <Project />
             <Blog />
             <div className="mt-20">
-              Designed copied from{" "}
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://brittanychiang.com/"
-              >
-                <b className="text-slate-200">brittany chiang</b>
-              </a>{" "}
-              and coded in Visual Studio Code by yours truly. Built with React
-              and Tailwind CSS, deployed with Vercel. All text is set in the
-              Inter typeface.
+              A copied design and coded in Visual Studio Code by myself truly. Built with React
+              and Tailwind CSS, deployed with Netlify. All text is set in the Inter typeface.
             </div>
           </main>
         </div>
