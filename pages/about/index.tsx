@@ -164,37 +164,12 @@ const About = () => {
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                Github
-              </div>
-            </li>
-            <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                Bitbucket
-              </div>
-            </li>
-            <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                 RESTful APIs
               </div>
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                 GraphQL
-              </div>
-            </li>
-            <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                OOP
-              </div>
-            </li>
-            <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                Multi-Threading
-              </div>
-            </li>
-            <li className="mr-1.5 mt-2">
-              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                Design Principles
               </div>
             </li>
             <li className="mr-1.5 mt-2">
@@ -219,7 +194,12 @@ const About = () => {
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                3rd Party Integration
+                Design Principles
+              </div>
+            </li>
+            <li className="mr-1.5 mt-2">
+              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                Multi-Threading
               </div>
             </li>
           </ul>
