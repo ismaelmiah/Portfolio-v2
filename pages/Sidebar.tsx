@@ -57,16 +57,8 @@ const Header = () => {
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/3 lg:justify-between lg:py-12">
       <SocialLinks />
       <div className="w-5/6">
-        <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-          <ScrollLink
-            activeClass="active"
-            to="/"
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
+        <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl title">
             Ismael Miah
-          </ScrollLink>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
           Software Engineer

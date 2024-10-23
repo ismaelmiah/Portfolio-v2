@@ -20,8 +20,11 @@
   .mt-10-sm {
     margin-top: 10px;
   }
-}
+} 
 
+.title {
+  color: linear-gradient(90deg, #9d3dc7, #5eead4, #fff, #0f172a, #0f172a);
+}
 /* Style for the gallery */
 .gallery {
   display: flex;
