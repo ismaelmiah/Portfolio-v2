@@ -54,8 +54,7 @@ const Education = () => {
                   <header aria-label="september 2024 to present">
                     <b>Master&apos;s in Computer Networking (Msc)</b>
                   </header>
-                  <p className="mt-2 text-sm leading-normal">
-                  <ul>
+                  <ul className="mt-2 text-sm leading-normal">
                       <li>
                         - Learned foundational networking concepts and security fundamentals.
                       </li>
@@ -75,7 +74,6 @@ const Education = () => {
                         - Learned about cloud computing and virtualization.
                       </li>
                     </ul>
-                  </p>
                 </div>
                 <Image
                   alt=""
@@ -129,8 +127,7 @@ const Education = () => {
                   <header aria-label="january 2017 to july 2021">
                     <b>Bachelor&apos; in Software Engineering (BSc)</b>
                   </header>
-                  <p className="mt-2 text-sm leading-normal">
-                    <ul>
+                    <ul className="mt-2 text-sm leading-normal">
                       <li>
                         - Graduated with a CGPA of 3.82 out of 4.00
                       </li>
@@ -160,7 +157,6 @@ const Education = () => {
                         - Honed communication and teamwork abilities.
                       </li>
                     </ul>
-                  </p>
                 </div>
                 <Image
                   alt=""
