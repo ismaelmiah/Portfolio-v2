@@ -9,21 +9,22 @@ export default function Home() {
     <>
       <div>
         <Head>
-          <title>Ismael&apos;s Portfolio</title>
-          <meta
-            property="og:description"
-            content="Ismael Miah is a software engineer who builds accessible,
-  inclusive products and digital experiences for the web."
-          />
-          <meta property="og:image" content="/images/Thumbnail.jpeg" />
+          <title>Ismael Miah - Portfolio</title>
+          <meta property="og:description" content="Welcome to my portfolio! I am a software engineer who builds accessible, inclusive products and digital experiences for the web." />
+          <meta name="keywords" content="portfolio, web developer, Asp dot net developer, dot net developer, software engineer" />
+          <meta name="author" content="Ismael Miah" />
+          <meta property="og:image" content="https://devismael.com/images/Thumbnail.jpeg" />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:alt" content="Summary Image" />
-          <meta property="og:title" content="Ismael Miah" />
+          <meta property="og:site_name" content="Ismael's Portfolio" />
+          <meta property="og:url" content="https://devismael.com" />
+          <meta property="og:title" content="Ismael Miah - Portfolio" />
           <meta property="og:type" content="website" />
           <meta property="og:locale" content="en_IE" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta property="og:site_name" content="Ismael's Portfolio" />
           <meta name="twitter:image:alt" content="Backend Engineer" />
+          <meta name="twitter:description" content="Welcome to my portfolio! I am a software engineer who builds accessible, inclusive products and digital experiences for the web." />
+          <meta name="twitter:image" content="https://devismael.com/images/Thumbnail.jpeg" />
           <link rel="shortcut icon" href="/favicon/apple-touch-icon.png" />
           <link
             rel="favicon-16x16"
