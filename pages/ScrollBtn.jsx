@@ -46,7 +46,7 @@ const ScrollBtn = () => {
 
   return (
     <div
-      className="fixed bottom-10 right-20 z-50 bg-darkText/40 text-lightText/80 p-3 rounded-full cursor-pointer hover:bg-black hover:text-designColor transition duration-300 scrollBtn"
+      className="fixed bottom-10 lg:right-20 md:right-20 right-8 z-50 bg-darkText/40 text-lightText/80 p-3 rounded-full cursor-pointer hover:bg-black hover:text-designColor transition duration-300 scrollBtn"
       style={{ width: 50, height: 50 }}
     >
       <span className="absolute inline-block left-0 top-0">
