@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
+import Modal from "@/components/Modal";
+import Link from "next/link";
 
 const Certifications = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -11,12 +13,28 @@ const Certifications = () => {
   };
 
   const handleCloseModal = () => {
-    console.log("closed");
     setModalOpen(false);
   };
 
-  console.log(modalImageSrc);
-  console.log(modalOpen);
+  var certificates = [
+    {
+      title: "Cloud Computing Fundamental",
+      fileName: "cloud-computing-fundamentals.png",
+    },
+    {
+      title: "Asp .NET Full Stack MVC Certificate",
+      fileName: "asp.net-mvc-certificate.jpg",
+    },
+    {
+      title: "Foundational C sharp Certificate(Microsoft)",
+      fileName: "foundational-c-sharp-with-microsoft.png",
+    },
+    {
+      title: "Linux Essential Course Completion Certificate",
+      fileName: "linux-essential.png",
+    },
+  ];
+
   return (
     <>
       <section
@@ -30,75 +48,65 @@ const Certifications = () => {
           </h2>
         </div>
         <div className="w-full flex flex-wrap">
-          <div className="w-1/3 p-2">
-            <Image
-              className="w-full h-auto transition-transform duration-300 transform hover:scale-110 cursor-pointer"
-              src="/certificates/CSharp-Basic-Certificate.png"
-              width={150}
-              height={200}
-              alt="HackerRank C# Basic Certificate"
-              onClick={() =>
-                handleOpenModal("/certificates/CSharp-Basic-Certificate.png")
-              }
-            />
-          </div>
-          <div className="w-1/3 p-2">
-            <Image
-              className="w-full h-auto transition-transform duration-300 transform hover:scale-110 cursor-pointer"
-              src="/certificates/JavaScript-Basic-Certificate.png"
-              width={150}
-              height={200}
-              alt="HackerRank JavaScript Basic Certificate"
-              onClick={() =>
-                handleOpenModal(
-                  "/certificates/JavaScript-Basic-Certificate.png"
-                )
-              }
-            />
-          </div>
-          <div className="w-1/3 p-2">
-            <Image
-              className="w-full h-auto transition-transform duration-300 transform hover:scale-110 cursor-pointer"
-              src="/certificates/SQL-Basic-Certificate.png"
-              width={150}
-              height={200}
-              alt="HackerRank SQL Basic Certificate"
-              onClick={() =>
-                handleOpenModal("/certificates/SQL-Basic-Certificate.png")
-              }
-            />
-          </div>
-          <div className="w-1/3 p-2">
-            <Image
-              className="w-full h-auto transition-transform duration-300 transform hover:scale-110 cursor-pointer"
-              src="/certificates/javascript-algorithms-and-data-structures.png"
-              width={150}
-              height={200}
-              alt="FreeCodeCampg JavaScript Algorithms and Data Structure"
-              onClick={() =>
-                handleOpenModal("/certificates/javascript-algorithms-and-data-structures.png")
-              }
-            />
-          </div>
+          {certificates.slice(0, 4).map((certificate, index) => (
+            <div key={index} className="w-1/2 p-2">
+              <div className="relative group">
+                <Image
+                  className="w-full h-auto transition-transform duration-300 transform hover:scale-110 cursor-pointer"
+                  src={`/certificates/${certificate.fileName}`}
+                  width={150}
+                  height={200}
+                  alt={certificate.title}
+                  onClick={() =>
+                    handleOpenModal("/certificates/" + certificate.fileName)
+                  }
+                />
+                <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 text-white p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-sm text-center">{certificate.title}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-8">
+          <Link
+            onClick={() => window.scrollTo(0, 0)}
+            className="inline-flex font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
+            aria-label="View Full Project Archive"
+            href="/certifications"
+          >
+            <span>
+              <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                View All{" "}
+              </span>
+              <span className="whitespace-nowrap">
+                <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                  Certificates
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </span>
+          </Link>
         </div>
       </section>
 
-      {modalOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex justify-center items-center z-50">
-          <span
-            className="absolute top-4 right-4 text-white text-2xl cursor-pointer"
-            onClick={() => handleCloseModal()}
-          >
-            &times;
-          </span>
-          <Image
-            src={modalImageSrc}
-            height={1000}
-            width={1000}
-            alt="Modal Image"
-          />
-        </div>
-      )}
+      <Modal
+        isOpen={modalOpen}
+        onClose={handleCloseModal}
+        imageSrc={modalImageSrc}
+      />
     </>
   );
 };
