@@ -52,11 +52,11 @@
   color: rgb(226 232 240 / 1);
 }
 
-.resume-button, .blog-button{
+.click-button{
   transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 }
 
-.resume-button:hover, .blog-button:hover{
+.click-button:hover{
   box-shadow: 3px 3px 0 0 #64ffda;
   transform: translate(-4px, -4px);
   outline: none;

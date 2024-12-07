@@ -4,6 +4,7 @@ import Certifications from "./certifications";
 import Experience from "./experience";
 import Project from "./projects";
 import Education from "./education";
+import Contact from "./contact";
 
 export default function Home() {
   return (
@@ -60,6 +61,7 @@ export default function Home() {
       <Project />
       <Education />
       <Certifications />
+      <Contact />
       <div className="mt-20">
         © {new Date().getFullYear()} Ismael Miah. Made with ♥ in England, United Kingdom.
       </div>
