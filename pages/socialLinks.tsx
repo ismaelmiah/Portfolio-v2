@@ -44,8 +44,9 @@ const SocialLInks = () => {
     <>
       <div className="flex flex-col items-center justify-center gap-4 text-teal-300">
         <div className="flex lg:flex-col md:flex-col flex-row lg:gap-y-5 md:gap-y-5 gap-x-8 py-6 lg:py-0 md:py-0">
-          {socialAccounts?.map((item) => (
+          {socialAccounts?.map((item, index) => (
             <a
+              key={index}
               href={item?.link}
               target="blank"
             >
