@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="mb-16 scroll-mt-16 md:mb-16 lg:mb-30 lg:scroll-mt-24"
+      className="mb-16 scroll-mt-16 md:mb-16 lg:mb-30 lg:scroll-mt-16"
       aria-label="About me"
     >
       <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
@@ -12,20 +12,7 @@ const About = () => {
       </div>
       <div>
         <p className="mb-4 text-justify">
-          A few years back, I decided to try my hand at establishing Facebook on
-          my own using raw PHP, and that was the moment I fell into coding and
-          web development, even if I couldn&apos;t finish that project. Fast
-          forward to now, and I&apos;ve had the pleasure of developing software
-          for{" "}
-          <a
-            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            href="https://devskill.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            DevSkill
-          </a>
-          , and{" "}
+          I started my professional career at{" "}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://www.asthait.com/"
@@ -34,9 +21,31 @@ const About = () => {
           >
             ASTHA-IT.
           </a>
+          , tackling real-world problems with technology. Alongside my job, I
+          completed a remote internship at {""}
+          <a
+            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+            href="https://devskill.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            DevSkill
+          </a>
+          , which was a pivotal experience that enhanced my skills during my
+          first year at ASTHA-IT. Lastly, I joined{" "}
+          <a
+            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+            href="https://www.hogarth.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Hogarth
+          </a>{" "}
+          in early 2024, and after that, I moved to London, United Kingdom, for
+          my studies.
         </p>
-        <p className="mb-4 text-justify">
-          I also like sharing content in{" "}
+        <p className="mb-4">
+          I love sharing web development insights with the Dev Community on{" "}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://www.linkedin.com/in/ismaelmiah/"
@@ -45,19 +54,31 @@ const About = () => {
           >
             LinkedIn
           </a>{" "}
-          related to the stuff that I have learned over the years in Web
-          Development so it can help other people of the Dev Community.
-        </p>
+          and{" "}
+          <a
+            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+            href="https://devismael.substack.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Substack
+          </a>{" "}
+          platform. Outside of work, I&apos;m an avid chess player—feel free to
+          check out my profile on Lichess:{" "}
+          <a
+            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+            href="https://lichess.org/@/ismailhosen"
+            target="_blank"
+            rel="noreferrer"
+          >
+            lichess.org/@/ismailhosen
+          </a>
+          .{" "}
+        </p>{" "}
         <p className="mb-4 text-justify">
-          I&apos;m interested in{" "}
-          <b className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300">
-            Part-Time
-          </b>{" "}
-          employment options where I can grow, contribute, and learn. If you
-          have a fantastic opportunity that matches my talents and expertise,
-          please do not hesitate to contact me. In my free time, I contribute
-          some open-source projects and try to learn something new from LinkedIn
-          connections.
+          {" "}
+          Open to <b className="font-medium text-slate-200">part-time</b> or <b className="font-medium text-slate-200">contract</b> roles where I can make a
+          difference, grow, and keep evolving.
         </p>
       </div>
 
@@ -102,11 +123,11 @@ const About = () => {
                 MSSQL Server
               </div>
             </li>
-            <li className="mr-1.5 mt-2">
+            {/* <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                 PostgreSQL
               </div>
-            </li>
+            </li> */}
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                 MongoDB
@@ -124,37 +145,37 @@ const About = () => {
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-              EC2
+                EC2
               </div>
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-              S3
+                S3
               </div>
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-              ELB
+                ELB
               </div>
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-              ASG
+                ASG
               </div>
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-              Lambda
+                Lambda
               </div>
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-              SQS
+                SQS
               </div>
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-              SNS
+                SNS
               </div>
             </li>
             <li className="mr-1.5 mt-2">
@@ -167,11 +188,11 @@ const About = () => {
                 RESTful APIs
               </div>
             </li>
-            <li className="mr-1.5 mt-2">
+            {/* <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                 GraphQL
               </div>
-            </li>
+            </li> */}
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                 Docker
