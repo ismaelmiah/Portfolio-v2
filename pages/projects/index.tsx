@@ -1,4 +1,38 @@
 import Link from "next/link";
+import Image from "next/image";
+
+const highlightedProjects = [
+  {
+    title: 'RL-DataCoach',
+    description: 'RLDataCoach is a powerful tool for Rocket League players, offering personalized feedback by analyzing replays against a benchmark of 20,000+ games. It identifies key improvement areas from 60+ in-game events, providing targeted training to help players enhance skills and rank up efficiently without generic guides or coaching sessions.',
+    thumbnailFileName: 'rl-datacoach.png',
+    link: 'https://rldatacoach.com'
+  },
+  {
+    title: 'BrandShare',
+    description: 'A large-scale marketing tool used by clients like Dell, Ford, Colgate, Nestlé, and many other global companies, which streamlines workflows and facilitates collaboration on marketing designs and templates.',
+    thumbnailFileName: 'marketting-workflow.png',
+    link: 'https://dellshare.com'
+  },
+  {
+    title: 'Apex4u',
+    description: 'Apex is a brand that offers a wide range of footwear, clothing and accessories for men, women and kids. Apex4u.com is designed to provide customers a universal digital experience: accessible, responsive and most of all, easy to evolve and scale.',
+    thumbnailFileName: 'apex.png',
+    link: 'https://apex4u.com'
+  },
+  {
+    title: 'StrataSpot',
+    description: 'Strataspot is a cloud based app that allows residents, owners and building managers to connect with ease. From simple maintenance requests to noticeboards, every party has access to all the information they require at the tip of their fingers.',
+    thumbnailFileName: 'strataspot.jpg',
+    link: 'https://strataspot.com.au'
+  },
+  {
+    title: 'Transcom Digital',
+    description: 'Transcomdigital.com is #1 online shopping platform in Bangladesh offering premium quality and best online experience to purchase Original Electronic Appliances. You can find almost all kind of electronics solution for your home.',
+    thumbnailFileName: 'transcomdigital.jpg',
+    link: 'https://transcomdigital.com'
+  }
+];
 
 const Project = () => {
   return (
@@ -15,168 +49,58 @@ const Project = () => {
         </div>
         <div>
           <ul className="group/list">
-            <li className="mb-12">
-              <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                <div className="z-10 sm:order-2 sm:col-span-6">
-                  <h3>
-                    <a
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                      href="https://apex4u.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="Apex4u"
-                    >
-                      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                      <span>
-                        Apex4u
-                        <span className="inline-block">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
+            {highlightedProjects.map((project, index) => (
+              <li key={index} className="mb-12">
+                <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <div className="z-10 sm:order-2 sm:col-span-6">
+                    <h3>
+                      <a
+                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                        href={project.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={project.title}
+                      >
+                        <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                        <span>
+                          {project.title}
+                          <span className="inline-block">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                clipRule="evenodd"
+                              ></path>
+                            </svg>
+                          </span>
                         </span>
-                      </span>
-                    </a>
-                  </h3>
-                  <p className="mt-2 text-sm leading-normal text-justify">
-                    Apex is a brand that offers a wide range of footwear,
-                    clothing and accessories for men, women and kids. Apex4u.com
-                    is designed to provide customers a universal digital
-                    experience: accessible, responsive and most of all, easy to
-                    evolve and scale.
-                  </p>
+                      </a>
+                    </h3>
+                    <p className="mt-2 text-sm leading-normal text-justify">
+                      {project.description}
+                    </p>
+                  </div>
+                  <Image
+                    alt=""
+                    loading="lazy"
+                    width="200"
+                    height="48"
+                    decoding="async"
+                    data-nimg="1"
+                    className="rounded transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                    style={{ color: "transparent" }}
+                    src={`/images/projects/${project.thumbnailFileName}`}
+                  />
                 </div>
-                <img
-                  alt=""
-                  loading="lazy"
-                  width="200"
-                  height="48"
-                  decoding="async"
-                  data-nimg="1"
-                  className="rounded transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                  style={{ color: "transparent" }}
-                  src={"/images/projects/apex.png"}
-                />
-              </div>
-            </li>
-            <li className="mb-12">
-              <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                <div className="z-10 sm:order-2 sm:col-span-6">
-                  <h3>
-                    <a
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                      href="https://strataspot.com.au"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="StrataSpot"
-                    >
-                      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                      <span>
-                        StrataSpot
-                        <span className="inline-block">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                        </span>
-                      </span>
-                    </a>
-                  </h3>
-                  <p className="mt-2 text-sm leading-normal text-justify">
-                    Strataspot is a cloud based app that allows residents,
-                    owners and building managers to connect with ease. From
-                    simple maintenance requests to noticeboards, every party has
-                    access to all the information they require at the tip of
-                    their fingers.
-                  </p>
-                </div>
-                <img
-                  alt=""
-                  loading="lazy"
-                  width="200"
-                  height="48"
-                  decoding="async"
-                  data-nimg="1"
-                  className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                  style={{ color: "transparent" }}
-                  src={"/images/projects/strataspot.jpg"}
-                />
-              </div>
-            </li>
-            <li className="mb-12">
-              <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
-                <div className="z-10 sm:order-2 sm:col-span-6">
-                  <h3>
-                    <a
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                      href="https://transcomdigital.com"
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label="TranscomDigital"
-                    >
-                      <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                      <span>
-                        Transcom Digital
-                        <span className="inline-block">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            className="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
-                            aria-hidden="true"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                              clipRule="evenodd"
-                            ></path>
-                          </svg>
-                        </span>
-                      </span>
-                    </a>
-                  </h3>
-                  <p className="mt-2 text-sm leading-normal text-justify">
-                    Transcomdigital.com is #1 online shopping platform in
-                    Bangladesh offering premium quality and best online
-                    experience to purchase Original Electronic Appliances. You
-                    can find almost all kind of electronics solution for your
-                    home.
-                  </p>
-                </div>
-                <img
-                  alt=""
-                  loading="lazy"
-                  width="200"
-                  height="48"
-                  decoding="async"
-                  data-nimg="1"
-                  className="rounded transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                  style={{ color: "transparent" }}
-                  src={"/images/projects/transcomdigital.jpg"}
-                />
-              </div>
-            </li>
+              </li>
+            ))}
           </ul>
           <div className="mt-12">
             <Link
