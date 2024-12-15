@@ -15,7 +15,7 @@ const Contact = () => {
                 <p className="font-bold mb-2 text-white">I&apos;m always on the lookout for exciting projects and collaborations!</p>
                 <p>Whether you have a question, an opportunity, or just want to say hello, feel free to reach out. I&apos;ll do my best to respond promptly. Let&apos;s create something amazing together!</p>
             </div>
-            <a href="mailto:ismaelmiah.swe@gmail.com">
+            <a href="mailto:ismaelmiah@devismael.com">
                 <p className="click-button w-40 h-14 border rounded uppercase border border-teal-300 font-semibold mt-6 text-teal-300 tracking-wider rounded-md flex items-center justify-center">
                     Say Hello
                 </p>

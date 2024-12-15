@@ -34,7 +34,7 @@ const experiences: DetailedExperience[] = [
       "Responsible for implementing enhancements and fixes while maintaining codebase consistency and optimizing queries for large production data.",
     ],
     responsibilities: [
-      "Developed and maintained core features of the marketing automation platform",
+      "Developed and maintained features of the marketing automation platform",
       "Optimized database queries and improved application performance",
       "Collaborated with cross-functional teams to implement new features",
       "Conducted code reviews and maintained coding standards",
@@ -43,20 +43,19 @@ const experiences: DetailedExperience[] = [
       {
         title: "Performance Optimization",
         description:
-          "The application was experiencing slow response times with large datasets, affecting user experience.",
+          "The application was experiencing slow response times with large datasets in certain areas, affecting user experience.",
         solution:
           "Implemented query optimization, caching strategies, and database indexing, resulting in a 40% improvement in response times.",
       },
       {
-        title: "Legacy Code Migration",
+        title: "Issue Resolution",
         description:
-          "Needed to upgrade legacy components while ensuring zero downtime.",
+          "Faced complex issues with maintaining system stability.",
         solution:
-          "Developed a phased migration strategy and implemented feature flags for smooth transitions.",
+          "Implemented robust debugging processes and root cause analysis methodologies to ensure efficient problem resolution.",
       },
     ],
     achievements: [
-      "Reduced average page load time by 40%",
       "Implemented automated testing that increased code coverage by 25%",
       "Successfully migrated 3 major legacy components to modern architecture",
     ],
@@ -66,7 +65,7 @@ const experiences: DetailedExperience[] = [
       ".Net Web API",
       "Redis",
       "MS SQL",
-      "Angular",
+      "Angular JS",
       "AWS",
     ],
   },
@@ -86,7 +85,7 @@ const experiences: DetailedExperience[] = [
       "Architected and implemented complex software solutions",
       "Mentored junior developers and conducted technical training sessions",
       "Managed client communications and requirement analysis",
-      "Implemented and optimized SQL queries for large datasets",
+      "Implemented and optimized queries for large datasets for relational and non-relation DB",
       "Applied software design patterns and architectural practices",
       "Conducted R&D on complex libraries and frameworks",
       "Managed version control and code quality standards",
@@ -110,9 +109,8 @@ const experiences: DetailedExperience[] = [
     achievements: [
       "Reduced feature delivery time by 25%",
       "Improved operational efficiency by 40%",
-      "Increased platform user engagement by 25%",
       "Successfully processed over 20,000 game replays",
-      "Enhanced system performance through SQL query optimization",
+      "Enhanced system performance through DB query optimization",
       "Successfully mentored multiple junior developers",
       "Streamlined client communication and project delivery processes",
     ],
@@ -387,7 +385,7 @@ const ExperienceDetails = () => {
             </nav>
           </div>
 
-          <div className="mt-12 lg:ml-[25%]">
+          <div className="lg:ml-[25%]">
             {experiences.map((exp, index) => (
               <div
                 key={index}
