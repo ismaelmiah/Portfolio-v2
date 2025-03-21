@@ -25,19 +25,7 @@ const socialAccounts = [
     link: "https://devismael.substack.com/",
     icon: <SiSubstack />,
     delay: 1,
-  },
-  {
-    title: "facebook",
-    link: "https://www.facebook.com/ismail96.12/",
-    icon: <SlSocialFacebook />,
-    delay: 0.95,
-  },
-  {
-    title: "twitter",
-    link: "https://twitter.com/ismail96_12",
-    icon: <SlSocialTwitter />,
-    delay: 0.95,
-  },
+  }
 ];
 const SocialLInks = () => {
   return (
