@@ -41,6 +41,7 @@ const Modal = ({ isOpen, onClose, imageSrc }: ModalProps) => {
         className="absolute top-4 right-4 text-white text-6xl cursor-pointer hover:text-gray-300"
         onClick={onClose}
       >
+        
         &times;
       </span>
       <div className="max-w-[90%] max-h-[90%]">
