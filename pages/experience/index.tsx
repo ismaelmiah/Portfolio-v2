@@ -50,6 +50,17 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
+    period: "November 2024 — Present",
+    company: "AIT",
+    logo: "/images/experiences/ait.jpg",
+    role: "Software Engineer (Remote - Part Time)",
+    companyUrl: "https://ait.inc",
+    description: [
+      "Shipping new coaching features for RLDataCoach while refining the aws architecture—autoscaling seamlessly and <b>trimming cloud spend by 45%</b>."
+    ],
+    technologies: ["Python", "C#", "Asp .Net", ".Net Web API", "Redis", "PostgreSQL", "NextJS", "AWS"]
+  },
+  {
     period: "March 2024 — August 2024",
     company: "Hogarth",
     logo: "/images/experiences/hogarth.png",
@@ -63,17 +74,17 @@ const experiences: ExperienceItem[] = [
   },
   {
     period: "January 2023 — February 2024",
-    company: "Astha IT",
-    logo: "/images/experiences/astha-it.jpeg",
+    company: "AIT",
+    logo: "/images/experiences/ait.jpg",
     role: "Software Engineer",
-    companyUrl: "https://www.asthait.com/",
+    companyUrl: "https://ait.inc",
     description: [
       "<b>Led client communication and requirements analysis </b> for key projects, managing project timelines, and mentoring junior developers, resulting in a 25% reduction in feature delivery time.",
       "<b>Core Developer of RLDataCoach</b>: Developed a coaching algorithm that analyzes Rocket League gameplay, identifying 60+ in-game events per replay. Benchmarked over 20,000 replays to deliver personalized, rank-specific training recommendations.",
       "<b>E-commerce Platform Optimization</b>: Integrated payment services, campaign modules, and AWS solutions (Lambda, SQS, SNS, S3), driving a 30% increase in sales and improving operational efficiency by 40%",
       "<b>Social Media Platform Enhancement</b>: Upgraded functionality for a volunteer organization's platform, boosting user engagement by 25% and improving platform adoption and user experience."
     ],
-    technologies: ["C#", "ASP .NET", ".NET Web API", "ReactJS", "Postgres", "MongoDB", "AWS"]
+    technologies: ["C#", "ASP .NET", ".NET Web API", "ReactJS", "PostgreSQL", "MongoDB", "AWS"]
   }
 ];
 
@@ -89,7 +100,7 @@ const Experience = () => {
           Experience
         </h2>
       </div>
-      
+
       <div>
         <ol className="group/list">
           {experiences.map((exp, index) => (
@@ -107,22 +118,22 @@ const Experience = () => {
                     src={exp.logo}
                   />
                 </div>
-                
+
                 <div className="z-10 sm:col-span-10">
                   <h3 className="font-medium leading-snug text-slate-200">
                     <ExternalLink href={exp.companyUrl}>
                       {exp.role} {" . "} {exp.company}
                     </ExternalLink>
                   </h3>
-                  
+
                   {exp.description.map((desc, i) => (
-                    <p 
-                      key={i} 
+                    <p
+                      key={i}
                       className="mt-2 text-sm leading-normal text-justify"
                       dangerouslySetInnerHTML={{ __html: desc }}
                     />
                   ))}
-                  
+
                   {exp.relatedLinks && (
                     <ul className="mt-2 flex flex-wrap" aria-label="Related links">
                       {exp.relatedLinks.map((link, i) => (
@@ -139,7 +150,7 @@ const Experience = () => {
                       ))}
                     </ul>
                   )}
-                  
+
                   <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                     {exp.technologies.map((tech, i) => (
                       <TechBadge key={i} name={tech} />
@@ -150,38 +161,38 @@ const Experience = () => {
             </li>
           ))}
         </ol>
-        
+
         <div className="mt-12">
-            <Link
-              onClick={() => window.scrollTo(0, 0)}
-              className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
-              aria-label="View Full Project Archive"
-              href="/experience/details"
-            >
-              <span>
-                <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
-                  View Detailed {" "}
-                </span>
-                <span className="whitespace-nowrap">
-                  <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
-                    Experience
-                  </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                </span>
+          <Link
+            onClick={() => window.scrollTo(0, 0)}
+            className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group"
+            aria-label="View Full Project Archive"
+            href="/experience/details"
+          >
+            <span>
+              <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                View Detailed {" "}
               </span>
-            </Link>
+              <span className="whitespace-nowrap">
+                <span className="border-b border-transparent pb-px transition group-hover:border-teal-300 motion-reduce:transition-none">
+                  Experience
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </span>
+            </span>
+          </Link>
         </div>
       </div>
     </section>

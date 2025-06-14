@@ -15,11 +15,11 @@ const About = () => {
           I started my professional career at{" "}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-            href="https://www.asthait.com/"
+            href="https://www.ait.inc/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
-            ASTHA-IT.
+            AIT.
           </a>
           , tackling real-world problems with technology. Alongside my job, I
           completed a remote internship at {""}
@@ -27,22 +27,22 @@ const About = () => {
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://devskill.com/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             DevSkill
           </a>
           , which was a pivotal experience that enhanced my skills during my
-          first year at ASTHA-IT. Lastly, I joined{" "}
+          first year at AIT. Lastly, I joined{" "}
           <a
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://www.hogarth.com/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Hogarth
           </a>{" "}
           in early 2024, and after that, I moved to London, United Kingdom, for
-          my studies.
+          my studies. Later, I joined AIT as a Part-Time Software Engineer.
         </p>
         <p className="mb-4">
           I love sharing web development insights with the Dev Community on{" "}
@@ -50,7 +50,7 @@ const About = () => {
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://www.linkedin.com/in/ismaelmiah/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             LinkedIn
           </a>{" "}
@@ -59,7 +59,7 @@ const About = () => {
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://devismael.substack.com/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Substack
           </a>{" "}
@@ -69,7 +69,7 @@ const About = () => {
             className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
             href="https://lichess.org/@/ismailhosen"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             lichess.org/@/ismailhosen
           </a>
@@ -95,12 +95,12 @@ const About = () => {
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                Asp .NET MVC
+                Asp .NET
               </div>
             </li>
             <li className="mr-1.5 mt-2">
               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                Asp .NET Web API
+                NEXT JS
               </div>
             </li>
             <li className="mr-1.5 mt-2">

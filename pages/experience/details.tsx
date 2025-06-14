@@ -24,6 +24,36 @@ interface DetailedExperience {
 
 const experiences: DetailedExperience[] = [
   {
+    period: "November 2024 — Present",
+    company: "AIT",
+    logo: "/images/experiences/ait.jpg",
+    role: "Software Engineer (Remote - Part Time)",
+    companyUrl: "https://www.ait.inc",
+    description: [
+      "Shipping new coaching features for RLDataCoach while refining the AWS architecture—autoscaling seamlessly and <b>trimming cloud spend by 45%</b>.",
+      "Responsible for implementing enhancements and fixes while maintaining codebase consistency and optimizing queries for large production data.",
+    ],
+    responsibilities: [
+      "Developed and maintained features of the RLDataCoach training platform",
+      "Optimized database queries and improved application performance",
+      "Trimmed cloud spends by 45%",
+    ],
+    challenges: [
+      {
+        title: "Performance Optimization",
+        description:
+          "Certain sections of the application struggled with handling large datasets efficiently, leading to slower response times and impacting user experience.",
+        solution:
+          "Optimized queries, applied caching strategies, and refined database indexing—boosting response times by 40%.",
+      },
+    ],
+    achievements: [
+      "Able to reduced AWS cost by 45%",
+      "Successfully deployed 3 coaching feature",
+    ],
+    technologies: ["Python", "C#", "Asp .Net", ".Net Web API", "Redis", "PostgreSQL", "NextJS", "AWS"]
+  },
+  {
     period: "March 2024 — August 2024",
     company: "Hogarth",
     logo: "/images/experiences/hogarth.png",
@@ -40,20 +70,6 @@ const experiences: DetailedExperience[] = [
       "Conducted code reviews and maintained coding standards",
     ],
     challenges: [
-      {
-        title: "Performance Optimization",
-        description:
-          "The application was experiencing slow response times with large datasets in certain areas, affecting user experience.",
-        solution:
-          "Implemented query optimization, caching strategies, and database indexing, resulting in a 40% improvement in response times.",
-      },
-      {
-        title: "Issue Resolution",
-        description:
-          "Faced complex issues with maintaining system stability.",
-        solution:
-          "Implemented robust debugging processes and root cause analysis methodologies to ensure efficient problem resolution.",
-      },
     ],
     achievements: [
       "Implemented automated testing that increased code coverage by 25%",
@@ -71,10 +87,10 @@ const experiences: DetailedExperience[] = [
   },
   {
     period: "May 2022 — March 2024",
-    company: "Astha IT",
-    logo: "/images/experiences/astha-it.jpeg",
+    company: "AIT",
+    logo: "/images/experiences/ait.jpg",
     role: "Software Engineer - II",
-    companyUrl: "https://www.asthait.com/",
+    companyUrl: "https://www.ait.inc/",
     description: [
       "Led client communication and requirements analysis for key projects, managing project timelines, and mentoring junior developers.",
       "Core Developer of RLDataCoach: Developed a coaching algorithm that analyzes Rocket League gameplay.",
@@ -120,7 +136,7 @@ const experiences: DetailedExperience[] = [
       "ASP .NET Core",
       ".NET Web API",
       "Redis",
-      "Postgres",
+      "PostgreSQL",
       "MongoDB",
       "ReactJS",
       "AWS",
@@ -130,10 +146,10 @@ const experiences: DetailedExperience[] = [
   },
   {
     period: "February 2021 — April 2022",
-    company: "Astha IT",
-    logo: "/images/experiences/astha-it.jpeg",
+    company: "AIT",
+    logo: "/images/experiences/ait.jpg",
     role: "Software Engineer - I",
-    companyUrl: "https://www.asthait.com/",
+    companyUrl: "https://www.ait.inc/",
     description: [
       "Worked as a full-time software engineer focusing on enterprise application development and maintenance.",
       "Collaborated with cross-functional teams to deliver high-quality software solutions while ensuring smooth operations.",
@@ -185,7 +201,7 @@ const experiences: DetailedExperience[] = [
     period: "April 2021 — May 2021",
     company: "DevSkill",
     logo: "/images/experiences/devskill.jpeg",
-    role: "Software Engineer Intern",
+    role: "Software Engineer Intern (Remote - Part Time)",
     companyUrl: "https://devskill.com/",
     description: [
       "Collaborated with the development team to enhance DevSkill-v2 platform, focusing on user experience improvements and performance optimization.",
@@ -232,10 +248,10 @@ const experiences: DetailedExperience[] = [
   },
   {
     period: "December 2020 — January 2021",
-    company: "Astha IT",
-    logo: "/images/experiences/astha-it.jpeg",
+    company: "AIT",
+    logo: "/images/experiences/ait.jpg",
     role: "Software Engineer Intern (Bootcamp)",
-    companyUrl: "https://www.asthait.com/",
+    companyUrl: "https://www.ait.inc/",
     description: [
       "Participated in an intensive bootcamp program focusing on modern web development technologies and best practices.",
       "Gained hands-on experience with full-stack development through practical projects and team collaboration.",
@@ -300,6 +316,7 @@ const ExperienceDetails = () => {
         <div className="lg:flex lg:justify-between lg:gap-4">
           <button
             type="button"
+            title="mobileNav"
             onClick={() => setIsNavOpen(!isNavOpen)}
             className="fixed top-4 right-4 z-50 rounded-lg bg-slate-800 p-2 lg:hidden"
           >
@@ -361,11 +378,10 @@ const ExperienceDetails = () => {
                     className={`
                         w-full flex items-center gap-3 py-3 pl-4 -ml-px
                         border-l-2 transition-all duration-200
-                        ${
-                          activeTab === index
-                            ? "border-teal-300 text-teal-300"
-                            : "border-transparent text-slate-400 hover:text-slate-200 hover:border-slate-400"
-                        }
+                        ${activeTab === index
+                        ? "border-teal-300 text-teal-300"
+                        : "border-transparent text-slate-400 hover:text-slate-200 hover:border-slate-400"
+                      }
                       `}
                   >
                     <Image
@@ -433,28 +449,28 @@ const ExperienceDetails = () => {
                       </ul>
                     </div>
                   </div>
-
-                  <div>
-                    <h4 className="text-sm font-semibold text-slate-200 mb-4">
-                      Challenges & Solutions
-                    </h4>
-                    <div className="grid gap-4 sm:grid-cols-2">
-                      {exp.challenges.map((challenge, i) => (
-                        <div key={i} className="rounded-lg bg-slate-800/50 p-4">
-                          <h5 className="font-medium text-slate-200">
-                            {challenge.title}
-                          </h5>
-                          <p className="mt-2 text-sm">
-                            Challenge: {challenge.description}
-                          </p>
-                          <p className="mt-2 text-sm text-teal-300">
-                            Solution: {challenge.solution}
-                          </p>
-                        </div>
-                      ))}
+                  {exp.challenges.length > 0 &&
+                    <div>
+                      <h4 className="text-sm font-semibold text-slate-200 mb-4">
+                        Challenges & Solutions
+                      </h4>
+                      <div className="grid gap-4 sm:grid-cols-2">
+                        {exp.challenges.map((challenge, i) => (
+                          <div key={i} className="rounded-lg bg-slate-800/50 p-4">
+                            <h5 className="font-medium text-slate-200">
+                              {challenge.title}
+                            </h5>
+                            <p className="mt-2 text-sm">
+                              Challenge: {challenge.description}
+                            </p>
+                            <p className="mt-2 text-sm text-teal-300">
+                              Solution: {challenge.solution}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-
+                  }
                   <div>
                     <h4 className="text-sm font-semibold text-slate-200 mb-4">
                       Technologies Used
