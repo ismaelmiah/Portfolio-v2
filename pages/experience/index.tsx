@@ -70,7 +70,7 @@ const experiences: ExperienceItem[] = [
       "<b>Engineered scalable software solutions</b> for a marketing tool used by clients like Dell, Ford, Nestlé, and Colgate, improving workflow efficiency by 20%.",
       "Responsible for implementing enhancements and fixes while maintaining codebase consistency and <b>optimizing queries</b> for large production data."
     ],
-    technologies: ["C#", "Asp .Net", ".Net Web API", "MS SQL", "Angular"]
+    technologies: ["C#", "Asp .Net", "Angular", ".Net Web API", "MS SQL", "Angular"]
   },
   {
     period: "January 2023 — February 2024",
@@ -84,7 +84,7 @@ const experiences: ExperienceItem[] = [
       "<b>E-commerce Platform Optimization</b>: Integrated payment services, campaign modules, and AWS solutions (Lambda, SQS, SNS, S3), driving a 30% increase in sales and improving operational efficiency by 40%",
       "<b>Social Media Platform Enhancement</b>: Upgraded functionality for a volunteer organization's platform, boosting user engagement by 25% and improving platform adoption and user experience."
     ],
-    technologies: ["C#", "ASP .NET", ".NET Web API", "ReactJS", "PostgreSQL", "MongoDB", "AWS"]
+    technologies: ["C#", "ASP .NET", ".NET Web API", "React", "PostgreSQL", "MongoDB", "AWS"]
   }
 ];
 
