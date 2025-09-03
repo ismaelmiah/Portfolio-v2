@@ -49,7 +49,7 @@ const Education = () => {
                     </a>
                   </h3>
                   <header aria-label="september 2024 to present">
-                    September 2024 — Present
+                    September 2024 — Mid-September 2025
                   </header>
                   <header aria-label="september 2024 to present">
                     <b>Master&apos;s in Computer Networking (Msc)</b>
@@ -84,7 +84,7 @@ const Education = () => {
                   data-nimg="1"
                   className="rounded transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                   style={{ color: "transparent" }}
-                  src={"/images/educations/bedfordshire.png"}
+                  src={"/images/educations/bedfordshire.webp"}
                 />
               </div>
             </li>

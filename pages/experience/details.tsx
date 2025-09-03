@@ -30,13 +30,13 @@ const experiences: DetailedExperience[] = [
     role: "Software Engineer (Remote - Part Time)",
     companyUrl: "https://www.ait.inc",
     description: [
-      "Shipping new coaching features for RLDataCoach while refining the AWS architecture—autoscaling seamlessly and <b>trimming cloud spend by 45%</b>.",
+      "Shipping new coaching features for DataCoach while refining the AWS architecture—autoscaling seamlessly and <b>trimming cloud spend by 45%</b>.",
       "Responsible for implementing enhancements and fixes while maintaining codebase consistency and optimizing queries for large production data.",
     ],
     responsibilities: [
-      "Developed and maintained features of the RLDataCoach training platform",
+      "Developed new and maintained features of the DataCoach training platform",
       "Optimized database queries and improved application performance",
-      "Trimmed cloud spends by 45%",
+      "Enhanced system monitoring and alerting with Seq and CloudWatch, improving incident response and reducing downtime.",
     ],
     challenges: [
       {
@@ -49,9 +49,9 @@ const experiences: DetailedExperience[] = [
     ],
     achievements: [
       "Able to reduced AWS cost by 45%",
-      "Successfully deployed 3 coaching feature",
+      "Successfully deployed several coaching features",
     ],
-    technologies: ["Python", "C#", "Asp .Net", ".Net Web API", "Redis", "PostgreSQL", "NextJS", "AWS"]
+    technologies: ["Python", "C#", "Asp .Net", ".Net Web API", "Redis", "PostgreSQL", "NextJS", "Containerization", "AWS"]
   },
   {
     period: "March 2024 — August 2024",
