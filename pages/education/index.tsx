@@ -49,7 +49,7 @@ const Education = () => {
                     </a>
                   </h3>
                   <header aria-label="september 2024 to present">
-                    September 2024 — Mid-September 2025
+                    Result Pending-September 2025
                   </header>
                   <header aria-label="september 2024 to present">
                     <b>Master&apos;s in Computer Networking (Msc)</b>
