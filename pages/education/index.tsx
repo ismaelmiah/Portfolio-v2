@@ -49,12 +49,15 @@ const Education = () => {
                     </a>
                   </h3>
                   <header aria-label="september 2024 to present">
-                    Result Pending-September 2025
+                    September 2024 - September 2025
                   </header>
                   <header aria-label="september 2024 to present">
                     <b>Master&apos;s in Computer Networking (Msc)</b>
                   </header>
                   <ul className="mt-2 text-sm leading-normal">
+                      <li>
+                        - Graduate with a (71%) Merit score.
+                      </li>
                       <li>
                         - Learned foundational networking concepts and security fundamentals.
                       </li>
