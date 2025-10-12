@@ -27,7 +27,7 @@ const experiences: DetailedExperience[] = [
     period: "November 2024 — Present",
     company: "AIT",
     logo: "/images/experiences/ait.jpg",
-    role: "Software Engineer (Remote - Part Time)",
+    role: "Software Engineer (Remote - Full Time)",
     companyUrl: "https://www.ait.inc",
     description: [
       "Shipping new coaching features for DataCoach while refining the AWS architecture—autoscaling seamlessly and <b>trimming cloud spend by 45%</b>.",
