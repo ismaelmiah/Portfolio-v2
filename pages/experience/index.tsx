@@ -82,6 +82,7 @@ const experiences: ExperienceItem[] = [
       "<b>Led client communication and requirements analysis </b> for key projects, managing project timelines, and mentoring junior developers, resulting in a 25% reduction in feature delivery time.",
       "<b>Core Developer of RLDataCoach</b>: Developed a coaching algorithm that analyzes Rocket League gameplay, identifying 60+ in-game events per replay. Benchmarked over 20,000 replays to deliver personalized, rank-specific training recommendations.",
       "<b>E-commerce Platform Optimization</b>: Integrated payment services, campaign modules, and AWS solutions (Lambda, SQS, SNS, S3), driving a 30% increase in sales and improving operational efficiency by 40%",
+      "<b>Designed and maintained</b> Kafka-based event pipelines across <b>microservice systems</b>, enabling scalable, asynchronous communication between distributed services.",
       "<b>Social Media Platform Enhancement</b>: Upgraded functionality for a volunteer organization's platform, boosting user engagement by 25% and improving platform adoption and user experience."
     ],
     technologies: ["C#", "ASP .NET", ".NET Web API", "React", "PostgreSQL", "MongoDB", "AWS"]
