@@ -22,17 +22,17 @@ const Certifications = () => {
       fileName: "cloud-computing-fundamentals.png",
     },
     {
+      title: "Microsoft Azure Administrator Exam Prep",
+      fileName: "udemy-azure-administrator-exam-pre.jpg",
+    },
+    {
       title: "Asp .NET Full Stack MVC Certificate",
       fileName: "asp.net-mvc-certificate.jpg",
     },
     {
       title: "Foundational C sharp Certificate(Microsoft)",
       fileName: "foundational-c-sharp-with-microsoft.png",
-    },
-    {
-      title: "Linux Essential Course Completion Certificate",
-      fileName: "linux-essential.png",
-    },
+    }
   ];
 
   return (

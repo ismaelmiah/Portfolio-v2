@@ -22,6 +22,10 @@ const AllCertifications = () => {
       fileName: "cloud-computing-fundamentals.png",
     },
     {
+      title: "Microsoft Azure Administrator Exam Prep",
+      fileName: "udemy-azure-administrator-exam-pre.jpg",
+    },
+    {
       title: "Asp .NET Full Stack MVC Certificate",
       fileName: "asp.net-mvc-certificate.jpg",
     },
