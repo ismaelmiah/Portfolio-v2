@@ -50,7 +50,7 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
-    period: "November 2024 — Present",
+    period: "November 2024 — December 2025",
     company: "AIT",
     logo: "/images/experiences/ait.jpg",
     role: "Software Engineer (Remote - Full Time)",
