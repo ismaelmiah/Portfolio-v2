@@ -62,7 +62,7 @@ const experiences: ExperienceItem[] = [
   },
   {
     period: "March 2024 — August 2024",
-    company: "Hogarth",
+    company: "WPP Production",
     logo: "/images/experiences/hogarth.png",
     role: "Software Engineer",
     companyUrl: "https://www.hogarth.com/",

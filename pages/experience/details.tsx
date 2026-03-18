@@ -55,10 +55,10 @@ const experiences: DetailedExperience[] = [
   },
   {
     period: "March 2024 — August 2024",
-    company: "Hogarth",
-    logo: "/images/experiences/hogarth.png",
+    company: "WPP Production",
+    logo: "/images/experiences/wpp-production.png",
     role: "Software Engineer",
-    companyUrl: "https://www.hogarth.com/",
+    companyUrl: "https://www.wppproduction.com/",
     description: [
       "Engineered scalable software solutions for a marketing tool used by clients like Dell, Ford, Nestlé, and Colgate, improving workflow efficiency by 20%.",
       "Responsible for implementing enhancements and fixes while maintaining codebase consistency and optimizing queries for large production data.",
