@@ -1,12 +1,11 @@
 const About = () => {
 
   const skills = [
+    "C#",    
     "Python",
-    "FastAPI",
-    "Flask",
-    "C#",
     "Asp .Net",
     ".Net Web API",
+    "Asp .Net Webforms",
     "Entity Framework",
     "Blazor",
     "JavaScript",
